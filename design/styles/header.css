@@ -1,0 +1,213 @@
+.header {
+    background-image: url(styles_img/header__bg.png);
+    background-size: cover;
+    height: 100vh;
+    position: absolute;
+    width: 100%;
+    z-index: -2;
+}
+
+.header__title {
+    font-family: var(--main-font);
+    text-transform: uppercase;
+    color: var(--white-color);
+    font-size: 7.500em;
+}
+
+.header__subtitle {
+    font-family: var(--main-font);
+    text-transform: uppercase;
+    color: var(--white-color);
+    font-size: 1.188em;
+    opacity: 0.9;
+}
+
+.header__info-text {
+    color: var(--white-color);
+    font-family: var(--main-font);
+    font-size: 0.813em;
+    opacity: 0.6;
+    margin-left: 4%;
+}
+
+.header__info-inner {
+    border-left: 4px solid;
+    border-color: var(--nav-first-color);
+}
+
+.header__main {
+    display: flex;
+    vertical-align: middle;
+}
+
+.header__inner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 10%;
+    grid-row-gap: 0px;
+    margin-top: 15%;
+}
+
+.header__main { 
+    grid-area: 1 / 1 / 2 / 2; 
+}
+
+.header__info { 
+    grid-area: 2 / 1 / 3 / 2;
+    margin-top: 25%;
+}
+
+.header__button {
+    grid-area: 3 / 1 / 4 / 2;
+    margin-top: 20%;
+}
+
+.header__card { 
+    grid-area: 4 / 2 / 5 / 3;
+    justify-items: end;
+    align-items: end;
+}
+
+.main__inner {
+    margin-left: 4%;
+    margin-top: 2%;
+}
+
+.rectangle {
+    height: 170px;
+    width: 55px;
+    background-color: var(--nav-first-color);
+    position: absolute;
+    z-index: -1;
+    box-shadow: 6px 6px 3px var(--nav-second-color);
+    border-radius: 3px;
+}
+
+.header__inner a {
+    display: block;
+    text-decoration: none;
+    color: var(--white-color);
+    font-family: var(--main-font);
+}
+
+.header__card {
+    font-family: var(--main-font);
+    color: var(--white-color);
+    display: flex;
+    backdrop-filter: blur(10px);
+    align-items: center;
+    grid
+}
+
+.header__button_a {
+    position: relative;
+    display: inline-block;
+    padding: 25px 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.5s;
+    letter-spacing: 4px;
+    overflow: hidden;
+    margin-right: 50px;
+    width: 50%;
+}
+
+.header__button_a:hover{
+    background: var(--nav-first-color);
+    color: #050801;
+    box-shadow: 0 0 5px var(--nav-first-color),
+                0 0 25px var(--nav-first-color),
+                0 0 50px var(--nav-first-color),
+                0 0 200px var(--nav-first-color);
+    -webkit-box-reflect:below 1px linear-gradient(transparent, #0005);
+}
+
+.header__button_a span{
+    position: absolute;
+    display: block;
+}
+
+.header__button a span {
+  position: absolute;
+  display: block;
+}
+
+.header__button a span:nth-child(1) {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--nav-first-color));
+  animation: btn-anim1 1s linear infinite;
+}
+
+@keyframes btn-anim1 {
+  0% {
+    left: -100%;
+  }
+  50%,100% {
+    left: 100%;
+  }
+}
+
+.header__button a span:nth-child(2) {
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, var(--nav-first-color));
+  animation: btn-anim2 1s linear infinite;
+  animation-delay: .25s
+}
+
+@keyframes btn-anim2 {
+  0% {
+    top: -100%;
+  }
+  50%,100% {
+    top: 100%;
+  }
+}
+
+.header__button a span:nth-child(3) {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent, var(--nav-first-color));
+  animation: btn-anim3 1s linear infinite;
+  animation-delay: .5s
+}
+
+@keyframes btn-anim3 {
+  0% {
+    right: -100%;
+  }
+  50%,100% {
+    right: 100%;
+  }
+}
+
+.header__button a span:nth-child(4) {
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, var(--nav-first-color));
+  animation: btn-anim4 1s linear infinite;
+  animation-delay: .75s
+}
+
+@keyframes btn-anim4 {
+  0% {
+    bottom: -100%;
+  }
+  50%,100% {
+    bottom: 100%;
+  }
+}
+
+
+
+

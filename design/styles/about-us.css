@@ -1,0 +1,71 @@
+.about-us {
+	background-image: url(styles_img/about_bg.png);
+	background-size: cover;
+	text-align: right;
+	color: #fff;
+	font-family: var(--main-font);
+}
+
+.about-us__information {
+	width: 50%;
+}
+
+.about-us__inner {
+	display: flex;
+}
+
+.about-us__information h2 {
+	margin-top: 3.5%;
+	margin-bottom: 5%;
+	font-size: 3.000em;
+}
+
+.about-us__information p {
+	opacity: 0.5;
+	font-size: 1em;
+}
+
+.about-us__divider {
+	margin-left: auto;
+	background-color: rgba(3, 233, 244, 0.3);
+	box-shadow: -3px 3px 3px rgba(3, 233, 244, 0.1);
+}
+
+.divider1 {
+	width: 40px;
+	margin-top: 4%;
+	transition: 0.5s linear;
+}
+
+.divider2 {
+	width: 150px;
+	margin-bottom: 5%;
+	transition: 0.5s linear;
+}
+
+.about-us__ampty {
+	width: 50%;
+}
+
+
+.about-us__information:hover h2 + hr {
+    background-color: rgba(3, 233, 244, 1);
+	box-shadow: -3px 3px 3px rgba(3, 233, 244, 0.8);
+    width: 300px;
+    text-align: left;
+    transition: 0.5s linear;
+}
+
+.about-us__information:hover p + hr {
+    background-color: rgba(3, 233, 244, 1);
+	box-shadow: -3px 3px 3px rgba(3, 233, 244, 0.8);
+    width: 50px;
+    text-align: left;
+    transition: 0.5s linear;
+}
+
+.about-us__inner {
+	align-items: center;
+}
+
+
